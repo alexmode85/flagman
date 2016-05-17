@@ -11,6 +11,24 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', ['as' => 'index', 'uses' => 'NewsController@index']);
+Route::get('/index.html', ['as' => 'index', 'uses' => 'NewsController@index']);
+Route::get('menu', ['as' => 'menu', 'uses' => 'MenuController@menu']);
+//Route::get('/menu.html', function () {
+//    return view('pages.menu');
+//});
+Route::get('/banket.html', function () {
+    return view('pages.banket');
 });
+Route::get('/reviews.html', function () {
+    return view('pages.reviews');
+});
+
+Route::get('news', ['as' => 'news', 'uses' => 'NewsController@news']);
+Route::get('news/{slug}', ['as' => 'news.record', 'uses' => 'NewsController@cart']);
+
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
+//Route::get('message/{id}/edit', ['uses' => 'HomeController@edit', 'as' => 'message.edit'])->where(['id' => '[0-9]+']);
+

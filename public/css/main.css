@@ -1,0 +1,622 @@
+*::-webkit-input-placeholder {
+    color: #666;
+    opacity: 1;
+}
+
+*:-moz-placeholder {
+    color: #666;
+    opacity: 1;
+}
+
+*::-moz-placeholder {
+    color: #666;
+    opacity: 1;
+}
+
+*:-ms-input-placeholder {
+    color: #666;
+    opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {}
+
+body input:required:valid,
+body textarea:required:valid {}
+
+body {
+    font-family: "RobotoRegular", sans-serif;
+    font-size: 16px;
+    background-color: #f9f5f1;
+}
+
+h1 {
+    margin: 0px;
+    padding: 0;
+    position: relative;
+    z-index: 5;
+}
+
+.col-md-12 h1 {
+    font-family: "RobotoBold", sans-serif;
+    text-align: center;
+    font-size: 32px;
+    color: #724923;
+    margin: 0px;
+}
+
+h2 {
+    margin: 0px;
+    padding: 0;
+    position: relative;
+    z-index: 5;
+}
+
+h3 {
+    font-family: "RobotoBold", sans-serif;
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #724923;
+}
+
+.card-menu {
+    background-color: #fff;
+    border: 1px solid #dacfc7;
+    width: 100%;
+    min-height: 225px;
+    padding: 10px 10px 10px 10px;
+}
+
+.img-view {
+    width: 100%;
+}
+
+.img {
+    width: 100%;
+}
+
+.logo {
+    height: auto;
+    width: 100%;
+}
+
+.card-title {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.card-title .food-name {
+    font-family: "RobotoBold", sans-serif;
+}
+
+.price {
+    display: block;
+    color: #724923;
+    margin-top: 5px;
+}
+
+.left-col {
+    display: block;
+    margin-top: 50px;
+    width: 240px;
+    text-align: center;
+    color: #8c5a2b;
+}
+
+.center-col {
+    display: block;
+    width: 264px;
+    height: 119px;
+    margin-top: 39px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.right-col {
+    display: block;
+    margin-top: 45px;
+    width: 210px;
+    float: right;
+}
+
+.order-button {
+    letter-spacing: 0.6px;
+    margin-top: 12px;
+    margin-left: 40px;
+    display: block;
+    width: 160px;
+    height: 34px;
+    font-family: "RobotoRegular";
+    font-size: 16px;
+    color: #fff;
+    background-color: #9e6630;
+    text-align: center;
+    /*    border: 1px solid #724923;*/
+    padding-top: 5px;
+}
+
+.order-button:hover {
+    /*    background-color: #8c5a2b;*/
+    color: #9e6630;
+    background-color: #fff;
+    border: 1px solid #b48659;
+}
+
+.contacts {
+    font-family: "RobotoMedium", sans-serif;
+    font-size: 17px;
+}
+
+.fa-phone {
+    color: #8c5a2b;
+    font-size: 20px;
+    margin-right: 6px;
+}
+
+.fa-envelope {
+    color: #8c5a2b;
+    font-size: 17px;
+    margin-right: 6px;
+    margin-top: 15px;
+}
+
+.tel {
+    color: #8c5a2b;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url("../img/soc.png") no-repeat;
+    margin-right: 13px;
+}
+
+.icon2 {
+    background-position: -24px 0px;
+}
+
+.icon3 {
+    background-position: -48px 0px;
+}
+
+.icon4 {
+    background-position: -72px 0px;
+}
+
+.icon5 {
+    background-position: -96px 0px;
+}
+
+.icon6 {
+    background-position: -120px 0px;
+}
+
+.navigation {
+    margin-top: 25px;
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.nav {
+    font-family: "RobotoBold", sans-serif;
+    font-size: 18px;
+    color: #724923;
+    margin: 0 13px;
+}
+
+.nav:hover {
+    color: #9e6630;
+}
+
+.nav:last-child {
+    margin-right: 0px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.view {
+    /*    background: url("../img/view.jpg") no-repeat center center;*/
+    border: 1px solid #8c5a2b;
+}
+
+
+/*-----------------*/
+
+.view-banket {
+    background: url("../img/banket.jpg") no-repeat center;
+    background-size: auto 100%;
+    height: 415px;
+    border: 1px solid #8c5a2b;
+}
+
+.banket-menu-list {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.banket-menu-list li {
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.download {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+
+/*-----------------*/
+
+.content.news-content {
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.slide {
+    margin-bottom: 46px;
+}
+
+.col-md-12 h2 {
+    font-family: "RobotoBold", sans-serif;
+    text-align: center;
+    font-size: 32px;
+    color: #724923;
+    margin: 0px;
+}
+
+.main-content .first {
+    margin-bottom: 22px;
+}
+
+.tab a {
+    font-family: "RobotoBold", sans-serif;
+    font-size: 16px;
+    color: #724923;
+    text-decoration: underline;
+    margin-right: 5px;
+    margin-left: 5px;
+    white-space: nowrap;
+}
+
+.tab a:hover {
+    color: #9e6630;
+}
+
+.tab {
+    text-align: center;
+    margin-bottom: 26px;
+}
+
+.first {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.first .col-md-3 {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.second {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    margin-bottom: 44px;
+}
+
+.second .col-md-3 {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.about {
+    display: block;
+    font-size: 14px;
+    margin-top: 16px;
+    line-height: 21px;
+}
+
+.read-all {
+    text-decoration: underline;
+    color: #9e6630;
+    font-size: 13px;
+    margin-top: 0;
+}
+
+footer .contacts {
+    text-align: center;
+    border-top: 1px solid #dacfc7;
+}
+
+footer .contacts .social-icons {
+    display: inline-block;
+    margin: 24px 32px 12px 38px;
+}
+
+.copyright {
+    display: block;
+    font-family: "RobotoRegular", sans-serif;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.adress {
+    font-size: 18px;
+    color: #8c5a2b;
+    margin-top: 52px;
+}
+
+.border {
+    border-top: 1px solid #dacfc7;
+}
+
+.hor-line {
+    position: relative;
+    top: 30px;
+    border-bottom: 1px solid #b89374;
+}
+
+.hor-line-overlap {
+    position: relative;
+    height: 3px;
+    width: 140px;
+    top: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f9f5f1;
+    z-index: 4;
+}
+
+.hidden {
+    display: none;
+}
+
+.pop-form input[type=text] {
+    display: block;
+    line-height: 22px;
+    margin: 10px auto 12px;
+    width: 90%;
+}
+
+.pop-form h3 {
+    margin: 4px auto 15px;
+    text-align: center;
+}
+
+.pop-form .button {
+    display: block;
+    margin: 16px auto 0;
+}
+
+
+/*post-card*/
+
+.post {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.post-avatar {
+    
+}
+
+.post-avatar1 {
+    float: left;
+    width: 60px;
+    height: 60px;
+    background: #999 url("../img/post-avatar1.jpg");
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.post-body {
+    overflow: hidden;
+}
+
+.post-name {
+    font-family: "RobotoBold", sans-serif;
+    padding: 0;
+    font-size: 16px;
+}
+
+.post-content {
+    margin-top: 2px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.more {
+    color: #999;
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+.news-avatar {
+    float: left;
+    width: 60px;
+    height: 60px;
+    background: #999 url("../img/news-avatar.jpg") 1px;
+    background-size: contain;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.fa-circle {
+    color: #aa5e16;
+    font-size: 10px;
+}
+
+#name {
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    width: 100%;
+    margin-top: 24px;
+}
+
+#message {
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    width: 100%;
+    min-height: 160px;
+    padding: 12px 10px;
+    resize: vertical;
+}
+
+#submit {
+    float: right;
+    margin-bottom: 30px;
+}
+
+.block_main ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.block_main ul li {
+    padding: 10px 0 10px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 15px;
+}
+
+.block_main .name {
+    font-weight: bold;
+    width: 100px;
+    display: block;
+    margin: 0;
+}
+
+.block_main .date {
+    color: #ccc;
+    font-family: "Arial", sans-serif;
+    font-size: 9px;
+    margin-right: 10px;
+}
+
+.block_main .message {
+    font-style: italic;
+}
+
+.shout {
+    margin-top: 20px;
+}
+
+
+/* ***** Menu effect ***** */
+
+nav a {
+    position: relative;
+    display: inline-block;
+    margin: 15px 25px;
+    outline: none;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+}
+
+nav a:hover,
+nav a:focus {
+    outline: none;
+}
+
+.cl-effect-17 a {
+    text-shadow: none;
+    padding: 5px 0;
+}
+
+.cl-effect-17 a::before {
+    color: #fff;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+    content: attr(data-hover);
+    position: absolute;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+    pointer-events: none;
+}
+
+.cl-effect-17 a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #9e6630;
+    opacity: 0;
+    -webkit-transform: translateY(5px);
+    -moz-transform: translateY(5px);
+    transform: translateY(5px);
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+    pointer-events: none;
+}
+
+.cl-effect-17 a:hover::before,
+.cl-effect-17 a:focus::before {
+    opacity: 0;
+    -webkit-transform: translateY(-2px);
+    -moz-transform: translateY(-2px);
+    transform: translateY(-2px);
+}
+
+.cl-effect-17 a:hover::after,
+.cl-effect-17 a:focus::after {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    transform: translateY(0px);
+}
+
+.next_button, .prev_button {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10em;
+    color: #fff;
+    cursor: pointer;
+    font-size: 36px;
+    
+    position: absolute;
+    top: 45%;
+    z-index: 10;
+}
+.next_button {
+    padding-left: 21px;
+    padding-right: 18px;
+    right: 25px;
+}
+.prev_button {
+    padding-left: 18px;
+    padding-right: 21px;
+    left: 25px;
+}
