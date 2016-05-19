@@ -14,15 +14,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="favicon.ico" />
+
     <link rel="stylesheet" href="libs/bootstrap/bootstrap-grid-3.3.1.min.css" />
     <link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
     <link rel="stylesheet" href="libs/fancybox/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="libs/countdown/jquery.countdown.css" />
     <link rel="stylesheet" href="libs/owl.carousel/dist/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="libs/owl.carousel/dist/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/media.css" />
+
+    <script src="libs/jquery/jquery-1.11.1.min.js"></script>
+    <script src="libs/owl.carousel/dist/owl.carousel.min.js"></script>
+
 </head>
 
 <body>
@@ -40,7 +46,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 col-md-offset-1 col-sm-6">
-                        <a href="index.html" class="center-col"><img src="../img/logo.png" alt="Флагман" class="logo" itemprop="logo"></a>
+                        <a href="/" class="center-col"><img src="../img/logo.png" alt="Флагман" class="logo" itemprop="logo"></a>
                     </div>
                     <div class="col-md-3 col-md-offset-1 col-sm-3">
                         <div class="right-col">
@@ -80,8 +86,8 @@
             <div class="container clearfix">
                 <div class="row">
                     <div class="col-md-12">
-                        
-                        <div class="view owl-carousel">
+
+                        <div class="view owl-carousel owl-theme">
                             <img src="../img/view3.jpg" alt="Ресторан Флагман" class="img-view" itemprop="photo">
                             <img src="../img/view1.jpg" alt="Ресторан Флагман" class="img-view" itemprop="photo">
                             <img src="../img/view2.jpg" alt="Ресторан Флагман" class="img-view" itemprop="photo">
@@ -109,8 +115,8 @@
                         <h2 id="menu">Меню</h2>
                         <div class="tab">
                             <a href="menu">Основное</a><i class="fa fa-circle"></i>
-                            <a href="banket.html">Банкетное</a><i class="fa fa-circle"></i>
-                            <a href="#">Винная карта</a>
+                            <a href="banket">Банкетное</a><i class="fa fa-circle"></i>
+                            <a href="wine-card">Винная карта</a>
                         </div>
                     </div>
                 </div>
@@ -212,7 +218,7 @@
                         <br>
                         <br> В меню «Флагмана» собраны самые любимые блюда домашней европейской и русской кухни: паста и пицца, блинчики с сытными и сладкими начинками (например, с икрой или с лососем шеф-посола и сливочным кремом), домашние котлетки и пельмени, мясо и рыба на гриле, утиная грудка с клюквенным соусом. И, конечно, изумительно вкусные десерты собственного приготовления: торт «Наполеон», настоящие французские круассаны с клубничным джемом, крем-брюле и даже домашний кисель (во «Флагмане» это не напиток, а полноценный и очень интересный десерт).</span>
                         <h3>Отзывы</h3>
-                        <a href="reviews.html" class="read-all">Читать все</a>
+                        <a href="reviews" class="read-all">Читать все</a>
                     </div>
                 </div>
                 <div class="row">
@@ -223,7 +229,7 @@
                                 <div class="post-content">
                                     Одно из самых любимых мест! Если Вы хотите вкусно покушать и замечательно посидеть, то Вам сюда! Каждый день разное меню, что не может не радовать! Кушать что-то приевшееся не придется!
                                 </div>
-                                <a class="more" href="reviews.html">Подробнее</a>
+                                <a class="more" href="reviews">Подробнее</a>
                             </div>
 
                         </div>
@@ -235,15 +241,15 @@
                                 <div class="post-content">
                                     Очень понравилось. Заведение небольшое, очень уютно. Подойдёт как для для ужина на двоих, так и для компании друзей. Ненавязчивая музыка и стильный интерьер. Древнерусская томленая кухня здесь...
                                 </div>
-                                <a class="more" href="reviews.html">Подробнее</a>
+                                <a class="more" href="reviews">Подробнее</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <!--  ---------- Новости ---------  -->
-            
-            
+
+
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -255,20 +261,20 @@
                 </div>
                 <div class="row">
                     @foreach($records as $item)
-                        <div class="col-md-6">
-                            <div class="row post">
-                                <div class="col-md-3">
-                                    <img src="/uploads/news/small/{{ $item->image }}" />
+                    <div class="col-md-6">
+                        <div class="row post">
+                            <div class="col-md-3">
+                                <img src="/uploads/news/small/{{ $item->image }}" />
+                            </div>
+                            <div class="col-md-9">
+                                <h2 class="post-name">{{ $item->title }}</h2>
+                                <div class="post-content">
+                                    {!! mb_substr(strip_tags($item->body), 0, 80) !!}...
                                 </div>
-                                <div class="col-md-9">
-                                    <h2 class="post-name">{{ $item->title }}</h2>
-                                    <div class="post-content">
-                                        {!! mb_substr(strip_tags($item->body), 0, 80) !!}...
-                                    </div>
-                                    <a class="more" href="/news/{{$item->slug}}">Читать больше</a>
-                                </div>
+                                <a class="more" href="/news/{{$item->slug}}">Читать больше</a>
                             </div>
                         </div>
+                    </div>
                     @endforeach
                 </div>
             </div>
@@ -335,39 +341,24 @@
 	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
 	<script src="libs/respond/respond.min.js"></script>
 	<![endif]-->
-    <script src="libs/jquery/jquery-1.11.1.min.js"></script>
+
     <script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
     <script src="libs/fancybox/jquery.fancybox.pack.js"></script>
     <script src="libs/fancybox/helpers/jquery.fancybox-buttons.js"></script>
     <script src="libs/fancybox/helpers/jquery.fancybox-media.js"></script>
-    <script src="libs/owl.carousel/dist/owl.carousel.min.js"></script>
     <script src="libs/waypoints/waypoints-1.6.2.min.js"></script>
     <script src="libs/countdown/jquery.plugin.js"></script>
     <script src="libs/countdown/jquery.countdown.min.js"></script>
     <script src="libs/countdown/jquery.countdown-ru.js"></script>
     <script src="libs/landing-nav/navigation.js"></script>
     <script src="libs/scrollto/jquery.scrollTo.min.js"></script>
+
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script src="js/common.js"></script>
 
     <!-- Yandex.Metrika counter -->
     <!-- /Yandex.Metrika counter -->
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-        ga('create', 'UA-75957105-1', 'auto');
-        ga('send', 'pageview');
-    </script>
 </body>
 
 </html>

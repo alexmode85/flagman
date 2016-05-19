@@ -17,11 +17,14 @@ Route::get('menu', ['as' => 'menu', 'uses' => 'MenuController@menu']);
 //Route::get('/menu.html', function () {
 //    return view('pages.menu');
 //});
-Route::get('/banket.html', function () {
+Route::get('/banket', function () {
     return view('pages.banket');
 });
-Route::get('/reviews.html', function () {
+Route::get('/reviews', function () {
     return view('pages.reviews');
+});
+Route::get('/wine-card', function () {
+    return view('pages.wine-card');
 });
 
 Route::get('news', ['as' => 'news', 'uses' => 'NewsController@news']);
@@ -31,4 +34,3 @@ Route::auth();
 
 Route::get('/home', 'HomeController@index');
 //Route::get('message/{id}/edit', ['uses' => 'HomeController@edit', 'as' => 'message.edit'])->where(['id' => '[0-9]+']);
-

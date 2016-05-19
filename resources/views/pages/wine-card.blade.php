@@ -8,9 +8,9 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Банкетное меню</title>
-    <meta name="description" content="Банкетные предложения ресторана Флагман" />
-    <meta name="keywords" content="Банкетное меню ресторана Флагман" />
+    <title>Винная карта</title>
+    <meta name="description" content="Винная карта ресторана Флагман" />
+    <meta name="keywords" content="Винная карта ресторана Флагман" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="favicon.ico" />
@@ -88,8 +88,8 @@
                         <h2 id="menu">Меню</h2>
                         <div class="tab">
                             &nbsp&nbsp&nbsp&nbsp<a href="menu">Основное</a>&nbsp<i class="fa fa-circle"></i>
-                            <a href="banket" style="text-decoration: none; border-bottom: 3px solid #8c5a2b;">Банкетное</a>&nbsp<i class="fa fa-circle"></i>
-                            <a href="wine-card">Винная карта</a>
+                            <a href="banket">Банкетное</a>&nbsp<i class="fa fa-circle"></i>
+                            <a href="wine-card" style="text-decoration: none; border-bottom: 3px solid #8c5a2b;">Винная карта</a>
                         </div>
                     </div>
                 </div>
@@ -97,16 +97,13 @@
                     <div class="col-md-4 col-sm-4 col-xs-12">
                         <h3 class="download">Скачать</h3>
                         <ul class="banket-menu-list">
-                            <li><a href="../files/Банкетное предложение 1500р.docx">Банкетное предложение 1500р</a></li>
-                            <li><a href="../files/Банкетное предложение 1750р.docx">Банкетное предложение 1750р</a></li>
-                            <li><a href="../files/Банкетное предложение 2000р.docx">Банкетное предложение 2000р</a></li>
-                            <li><a href="../files/Банкетное предложение 2200р.docx">Банкетное предложение 2200р</a></li>
-                            <li><a href="../files/Банкетное предложение 2500р.docx">Банкетное предложение 2500р</a></li>
+                            <li><a href="../files/Винная Карта.doc">Винная карта</a></li>
+
 
                         </ul>
                     </div>
                     <div class="col-md-8 col-sm-8 col-xs-12">
-                        <div class="view-banket"></div>
+                        <div class="view-wine"></div>
                     </div>
                 </div>
 
@@ -188,22 +185,7 @@
 
     <!-- Yandex.Metrika counter -->
     <!-- /Yandex.Metrika counter -->
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-        ga('create', 'UA-75957105-1', 'auto');
-        ga('send', 'pageview');
-    </script>
 </body>
 
 </html>

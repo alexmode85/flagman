@@ -102,7 +102,7 @@ h3 {
 .left-col {
     display: block;
     margin-top: 50px;
-    width: 240px;
+    /*    width: 240px;*/
     text-align: center;
     color: #8c5a2b;
 }
@@ -126,7 +126,8 @@ h3 {
 .order-button {
     letter-spacing: 0.6px;
     margin-top: 12px;
-    margin-left: 40px;
+    margin-left: auto;
+    margin-right: auto;
     display: block;
     width: 160px;
     height: 34px;
@@ -234,8 +235,14 @@ nav li {
 }
 
 .view {
-    /*    background: url("../img/view.jpg") no-repeat center center;*/
     border: 1px solid #8c5a2b;
+}
+
+.view-wine {
+    background: url("../img/wine-card.jpg") no-repeat center;
+    background-size: auto 100%;
+    border: 1px solid #8c5a2b;
+    height: 420px;
 }
 
 
@@ -426,9 +433,7 @@ footer .contacts .social-icons {
     margin-bottom: 40px;
 }
 
-.post-avatar {
-    
-}
+.post-avatar {}
 
 .post-avatar1 {
     float: left;
@@ -599,22 +604,24 @@ nav a:focus {
     transform: translateY(0px);
 }
 
-.next_button, .prev_button {
+.next_button,
+.prev_button {
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 10em;
     color: #fff;
     cursor: pointer;
     font-size: 36px;
-    
     position: absolute;
     top: 45%;
     z-index: 10;
 }
+
 .next_button {
     padding-left: 21px;
     padding-right: 18px;
     right: 25px;
 }
+
 .prev_button {
     padding-left: 18px;
     padding-right: 21px;

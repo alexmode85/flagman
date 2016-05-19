@@ -39,7 +39,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 col-md-offset-1 col-sm-6">
-                        <a href="index.html" class="center-col"><img src="../img/logo.png" alt="Флагман" class="logo" itemprop="logo"></a>
+                        <a href="/" class="center-col"><img src="../img/logo.png" alt="Флагман" class="logo" itemprop="logo"></a>
                     </div>
                     <div class="col-md-3 col-md-offset-1 col-sm-3">
                         <div class="right-col">
@@ -66,8 +66,8 @@
                         <nav class="navigation cl-effect-17" id="cl-effect-17">
                             <ul>
                                 <li><a href="#menu" class="nav cl-effect-17">Меню</a></li>
-                                <li><a href="index.html#about" class="nav cl-effect-17">О нас</a></li>
-                                <li><a href="index.html#news" class="nav cl-effect-17">Новости</a></li>
+                                <li><a href="/#about" class="nav cl-effect-17">О нас</a></li>
+                                <li><a href="/#news" class="nav cl-effect-17">Новости</a></li>
                                 <li><a href="#map" class="nav cl-effect-17">Контакты</a></li>
                             </ul>
                         </nav>
@@ -83,19 +83,19 @@
         <section class="main-content">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12"> 
+                    <div class="col-md-12">
                         <div class="hor-line"></div>
                         <div class="hor-line-overlap"></div>
                         <h1 id="menu">Меню</h1>
                         <div class="tab">
                             <a href="menu" style="text-decoration: none; border-bottom: 3px solid #8c5a2b;">Основное</a><i class="fa fa-circle"></i>
-                            <a href="banket.html">Банкетное</a><i class="fa fa-circle"></i>
-                            <a href="#">Винная карта</a>
+                            <a href="banket">Банкетное</a><i class="fa fa-circle"></i>
+                            <a href="wine-card">Винная карта</a>
                         </div>
                     </div>
                 </div>
-<!--      Новое МЕНЮ     -->
-<!--
+                <!--      Новое МЕНЮ     -->
+                <!--
                 <div class="row">
                     @foreach($records as $item)
                         <div class="col-md-3 col-sm-3">
@@ -112,7 +112,7 @@
                     @endforeach
                 </div>
 -->
-<!--                -->
+                <!--                -->
                 <div class="row first">
                     <div class="col-md-3 col-sm-3">
                         <div class="card-menu">
@@ -552,22 +552,7 @@
 
     <!-- Yandex.Metrika counter -->
     <!-- /Yandex.Metrika counter -->
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-        ga('create', 'UA-75957105-1', 'auto');
-        ga('send', 'pageview');
-    </script>
 </body>
 
 </html>
